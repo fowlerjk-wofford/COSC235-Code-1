@@ -1,9 +1,12 @@
 count = 0
+keep_going = True
 
 word = input()
-while word != 'quit':
+while keep_going:
   count += 1
   print(count)
   word = input()
-
-#more comments
+  if word != 'quit':
+    keep_going = True
+  else:
+    keep_going = False
